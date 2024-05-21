@@ -7,10 +7,11 @@
 - Guest that soil their pants will instantly become angry
 - Guests will use bathroom more frequently
 
-To install, simply place the .js file into the **C:\Users\Documents\OpenRCT2\plugin** folder
-
-
 ### Update notes for Pooping Peeps v1.10
 
 - Fixed an issue with the fast forward/pause buttons not working. 
 - Added monthly alerts for when too many "incidents" occur in your park
+
+### Installation
+
+To install, simply place the .js file into the **C:\Users\Documents\OpenRCT2\plugin** folder
