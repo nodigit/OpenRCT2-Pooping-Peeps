@@ -1,8 +1,9 @@
 var currentMonth = date.month;
 var incidents = 0;
+var pluginEnabled = false;
 
 var checkPoopLevel = function() {
-	if (date.ticksElapsed % 40 === 0){
+	if ((date.ticksElapsed % 40 === 0) && (pluginEnabled)){
 	
 		var allGuests = map.getAllEntities("guest");
 		
@@ -32,7 +33,7 @@ var checkPoopLevel = function() {
 }
 
 var poopReport = function() {
-	if (date.month !== currentMonth){
+	if ((date.month !== currentMonth) && (pluginEnabled)){
 
 		//Alerts you if there's too many guests defecating
 		if (incidents >= (park.guests*0.5)+1){
@@ -45,6 +46,17 @@ var poopReport = function() {
 	}
 }
 
+var pluginState = function()
+{
+	pluginEnabled = !pluginEnabled;
+	
+	var msg = {type: "blank", text: "Pooping Peeps enabled"};
+	if (!pluginEnabled) {
+		msg = {type: "blank", text: "Pooping Peeps disabled"};
+	}
+	park.postMessage(msg);
+
+}
 
 var main = function() {
 	
@@ -57,11 +69,13 @@ var main = function() {
 		}
 	);
 	
+	ui.registerMenuItem("Pooping Peeps", pluginState);
+	
 };
 
 registerPlugin({
 	name: "Pooping Peeps",
-	version: "1.1",
+	version: "1.2",
 	authors: ["nodigit"],
 	type: "local",
 	licence: "MIT",
