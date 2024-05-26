@@ -7,7 +7,7 @@
 - Guest that soil their pants will instantly become angry
 - Guests will use bathroom more frequently
 
-### Update notes for Pooping Peeps v1.12
+### Update notes for Pooping Peeps v1.20
 
 - Added in-game menu to enable/disable the plugin.
   
