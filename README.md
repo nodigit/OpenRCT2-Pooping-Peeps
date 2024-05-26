@@ -1,4 +1,4 @@
-### Pooping Peeps v1.10
+### Pooping Peeps v1.20
 
 ![pooping-peeps](https://github.com/nodigit/OpenRCT2-pooping-peeps/assets/6858129/0e880176-b45e-4acc-b74d-d00e651e144c)
 
@@ -9,7 +9,7 @@
 
 ### Update notes for Pooping Peeps v1.12
 
-- Added in-game menu to enable/disable the plugin. Menu is located under the Map button.
+- Added in-game menu to enable/disable the plugin.
   
 ![poop-menu](https://github.com/nodigit/OpenRCT2-Pooping-Peeps/assets/6858129/a4aa6d0a-136a-4b36-980b-c332d282bd25)
 
